@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.body{
+	background-color: #F9F3EA;
+}
+
+.container{
+	width: 80%;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-right: auto;
+	margin-left: auto;
+	box-sizing: border-box;
+}
+
+.title{
+	color: #406A82;
+	font-family: dnp-shuei-mgothic-std,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 48px;
+	letter-spacing: 0.03em;
+
+	margin-bottom: 30px;
+}
+
+.jp-message{
+	color: #201400;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.04em;
+	line-height: 160%;
+
+	margin-bottom: 20px;
+}
+
+.en-message, .es-message{
+	color: #201400;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	line-height: 160%;
+
+	margin-bottom: 20px;
+}
+
+.logo{
+	width: 100%;
+	max-width: 350px;
+
+	margin-top: 10px;
+}
