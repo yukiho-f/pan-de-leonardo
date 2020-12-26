@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pan de Leonardo</title>
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+
+		<!-- Reset CSS -->
+		<link rel="stylesheet" href="reset.min.css" media="all">
+		
+		<!-- Googleフォント -->
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+		<!-- Adobeフォント -->
+		<script>
+		  (function(d) {
+		    var config = {
+		      kitId: 'xfl7qbm',
+		      scriptTimeout: 3000,
+		      async: true
+		    },
+		    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		  })(document);
+		</script>
+		
+		<!-- Slick CSS -->
+		<link rel="stylesheet" href="slick/slick.css" media="all">
+		<link rel="stylesheet" href="slick/slick-theme.css">
+
+		<!-- fontawesome CSS -->
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script src="slick/slick.min.js"></script>
+
+		<!-- ScrollReveal -->
+		<script src="https://unpkg.com/scrollreveal"></script>
+
+		<!-- smooth-scroll -->
+		<script src="smooth-scroll.min.js"></script>
+
+		<script type="text/javascript">
+			var scroll = new SmoothScroll('a[href*="#"]',{
+			header: '#header-nav',
+			speed: 600
+		});
+		</script>
+		
+		<link rel="icon" type="image/png" href="images/favicon.png">
+
+		<!-- viewportを設定する -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	</head>
+
+	<body>
+		
+		<!-- ここからヘッダー -->
+		<header class="header">
+			
+			<!-- ハンバーガーメニュー -->
+			<!-- ドロワー -->
+			<div class="drawer">
+				<input type="checkbox" class="drawer-checkbox" id="drawerCheckbox">
+				<!-- ドロワーアイコン部分 -->
+				<label for="drawerCheckbox" class="drawer-icon">
+					<span class="drawer-icon-menu"></span>
+				</label>
+				<!-- ドロワー内のメニュー -->
+				<nav class="drawer-menu">
+					<ul>
+						<li class="li-border">
+							<a href="#" class="drawer-menu-item">
+								<span class="drawer-es">Casa</span>
+								<span class="drawer-jp">ホーム</span>
+							</a>
+						</li>
+						<li>
+							<a href="#concept" class="drawer-menu-item">
+								<span class="drawer-es">Concepto</span>
+								<span class="drawer-jp">コンセプト</span>
+							</a>
+						</li>
+						<li class="li-border">
+							<a href="#product" class="drawer-menu-item">
+								<span class="drawer-es">Productos</span>
+								<span class="drawer-jp">商品</span>
+							</a>
+						</li>
+						<li>
+							<a href="#class" class="drawer-menu-item">
+								<span class="drawer-es">Clases</span>
+								<span class="drawer-jp">パン教室</span>
+							</a>
+						</li>
+						<li class="li-border">
+							<a href="#information" class="drawer-menu-item">
+								<span class="drawer-es">Informaci&oacute;n</span>
+								<span class="drawer-jp">店舗情報</span>
+							</a>
+						</li>
+						<li>
+							<a href="#contact" class="drawer-menu-item">
+								<span class="drawer-es">Cont&aacute;ctenos</span>
+								<span class="drawer-jp">お問い合わせ</span>
+							</a>
+						</li>
+					</ul>
+
+					<div class="drawer-language">
+						<div class="drawer-language-wrapper">
+							<div class="drawer-language-topitem">
+					      		<span class="fas fa-globe-americas"></span>
+								Language
+								<span class="fas fa-caret-down"></span>
+							</div>
+							<div class="drawer-language-bottomitem">
+						      	<a class="drawer-japanese" href="#" lang="jp">日本語</a>
+						      	<a class="drawer-english" href="index_english.html" lang="en">English</a>
+						      	<a href="index_spanish.html" lang="es">Espa&ntilde;ol</a>
+					     	</div>
+				     	</div>
+	      			</div>
+
+				</nav>
+			</div>
+			
+			<!-- スクロール時上部固定ヘッダー -->
+			<div class="fixed-header-background">
+				<div class="flex-container fixed-header-container">
+					
+					<img src="images/fixed-logo@2x.png" alt="Pan de Leonardo -パン・デ・レオナルド-" class="fixed-header-logo">
+
+					<nav class="fixed-gnav">
+						<ul class="fixed-gnav-list">
+							<li class="fixed-gnav-list-item">
+								<a href="#">
+									ホーム
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#concept">
+									コンセプト
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#product">
+									商品
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#class">
+									パン教室
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#information">
+									店舗情報
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#contact">
+									お問い合わせ
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="fixed-number">
+						<span class="fas fa-phone"></span>
+						<a href="tel:">03-1234-5678</a>
+					</div>
+
+				</div>
+			</div>
+
+
+			<!-- 通常ヘッダー -->
+			<div class="header-background">
+				<div class="flex-container header-container">
+					
+					<h1>
+						<img src="images/header-logo@2x.png" alt="Pan de Leonardo -パン・デ・レオナルド-" class="header-logo">
+					</h1>
+
+					<nav class="gnav">
+						<ul class="gnav-list">
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#">
+										<span class="es">Casa</span>
+										<span class="jp">ホーム</span>
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#concept">
+										<span class="es">Concepto</span>
+										<span class="jp">コンセプト</span>
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#product">
+										<span class="es">Productos</span>
+										<span class="jp">商品</span>
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#class">
+										<span class="es">Clases</span>
+										<span class="jp">パン教室</span>
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#information">
+										<span class="es">Informaci&oacute;n</span>
+										<span class="jp">店舗情報</span>
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#contact">
+										<span class="es">Cont&aacute;ctenos</span>
+										<span class="jp">お問い合わせ</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="dropdown-btn">
+						<div class="dropdown-list">
+							<span class="fas fa-globe-americas"></span>
+							Language
+							<span class="fas fa-caret-down"></span>	
+						</div>
+
+						<ul class="dropdown-menu dropdown">
+							<li class="dropdown-menu-list">
+								<a class="language japanese" href="#" lang="jp">
+									日本語
+								</a>
+							</li>
+							<li class="dropdown-menu-list">
+								<a class="language english" href="index_english.html" lang="en">
+									English
+								</a>
+							</li>
+							<li class="dropdown-menu-list">
+								<a class="language espanol" href="index_spanish.html" lang="es">
+									Espa&ntilde;ol
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</header>
+		<!-- ここまでヘッダー -->
+
+		<main class="main">
+
+			<!-- ここからヒーローイメージ -->
+			<div class="hero">
+				
+				<div class="hero-contents-wrapper">
+					<a href="#"><img src="images/main-visual1@2x.png" alt="">
+						<div class="hero-contents">
+							<div class="hero-title">
+								<img src="images/main-logo@2x.png" alt="Pan de Leonardo">
+								<p>パン・デ・レオナルド</p>
+							</div>
+							<div class="hero-lead">
+								<p>南米の国、チリ出身のオーナーが<br>「故郷の味をもっと多くの人に知って欲しい」<br>という思いから立ち上げたベーカリーです。</p>
+							</div>
+						</div>
+						<a href="#concept" class="top-scroll">スクロール</a>
+					</a>
+				</div>
+
+				<div class="hero-contents-wrapper">
+					<a href="#">
+						<img class="pc" src="images/main-visual2-pc@2x.png" alt="">
+						<img class="sp" src="images/main-visual2-sp@2x.png" alt="">
+						<div class="hero-contents">
+							<div class="hero-title">
+								<img src="images/main-logo@2x.png" alt="Pan de Leonardo">
+								<p>パン・デ・レオナルド</p>
+							</div>
+							<div class="hero-lead">
+								<p>チリのパンやケーキ、<br>お菓子やワインを取り揃えています。</p>
+							</div>
+						</div>
+						<a href="#concept" class="top-scroll">スクロール</a>
+					</a>
+				</div>
+
+				<div class="hero-contents-wrapper">
+					<a href="#"><img src="images/main-visual3@2x.png" alt="">
+						<div class="hero-contents">
+							<div class="hero-title">
+								<img src="images/main-logo@2x.png" alt="Pan de Leonardo">
+								<p>パン・デ・レオナルド</p>
+							</div>
+							<div class="hero-lead">
+								<p>パン教室も開催しています。<br>オーナーと一緒に、<br>チリのパンの作り方や文化を学びましょう！</p>
+							</div>
+						</div>
+						<a href="#concept" class="top-scroll">スクロール</a>
+					</a>
+				</div>
+
+			</div>
+			<!-- ここまでヒーローイメージ -->
+
+
+			<!-- ここからコンセプト -->
+			<div id="concept" class="flex-container concept-container">
+
+				<h2 class="title">Concepto</h2>
+				<h3 class="subtitle">コンセプト</h3>
+
+
+				<div class="concept-img-group">
+					<img class="img-responsive concept-img" src="images/concept.png" alt="Pan de Leonardoオーナー" >
+					<div class="concept-img-flame"></div>
+				</div>
+				<div class="concept">
+					<p>「パン・デ・レオナルド」とは、スペイン語で「レオナルドのパン」という意味です。</p>
+					<p>“Bringing you a little taste of Chile to Japan.” 「故郷であるチリの味を、もっと多くの人に知って欲しい」 そのような思いから、オーナーであるレオナルドがPan de Leonardoを立ち上げました。</p>
+				</div>
+
+				<div class="button concept-btn-group">
+					<a href="#concept" class="concept-btn">Pan de Leonardoについてもっと知る<img class="button-arrow" src="images/arrow.png" alt=""></a>
+					<a href="#concept" class="concept-shortbtn">もっと読む<img class="button-arrow" src="images/arrow.png" alt=""></a>
+				</div>
+			</div>
+			<!-- ここまでがコンセプト -->
+
+			<!-- ここからが商品 -->
+			<div class="background">
+				<div id="product" class="container">
+					
+					<h2 class="title">Productos</h2>
+					<h3 class="subtitle">商品</h3>
+
+					<!-- 定番商品 -->
+					<div class="heading-mark-wrapper">
+						<h4 class="heading-mark product-heading-mark">
+							定番商品
+						</h4>
+					</div>
+
+					<div class="product-group">
+						<div class="product-item">
+							<img src="images/empanada.png" alt="Empanadas" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Empanada
+								</h5>
+								<h6 class="product-subtitle">
+									エンパナーダ
+								</h6>
+							</div>
+							<p class="product-text">
+								牛挽肉・玉ねぎ・ゆで卵・オリーブを小麦粉の生地で包み、オーブンで焼いたパン。
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/marraqueta.png" alt="Marraqueta" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Marraqueta
+								</h5>
+								<h6 class="product-subtitle">
+									マラケタ
+								</h6>
+							</div>
+							<p class="product-text">
+								小麦粉・塩・水・酵母のみで作られるフランスパンに似たパン。サクサクとした食感が特徴。
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/tres-leches-cake.png" alt="Tres leches cake" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Tres leches cake
+								</h5>
+								<h6 class="product-subtitle">
+									トレスレチェケーキ
+								</h6>
+							</div>
+							<p class="product-text">
+								3種類のミルク（エバミルク・コンデンスミルク・生クリーム）に浸したスポンジケーキ。
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/hallulla.png" alt="Hallulla" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Hallulla
+								</h5>
+								<h6 class="product-subtitle">
+									アジュージャ
+								</h6>
+							</div>
+							<p class="product-text">
+								スコーンのような食感の平たいパン。ぺブレをのせて食べるのが一般的。
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/empolvados.png" alt="Empolvados" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Empolvados
+								</h5>
+								<h6 class="product-subtitle">
+									エムポルバド
+								</h6>
+							</div>
+							<p class="product-text">
+								マンハル（やわらかいキャラメル）を小麦粉のパンで挟み、粉砂糖をまぶしたお菓子。
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/berlin.png" alt="Berlín" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Berl&iacute;n
+								</h5>
+								<h6 class="product-subtitle">
+									ベルリン
+								</h6>
+							</div>
+							<p class="product-text">
+								オーストリア・ドイツ起源のカスタードクリームを挟んだドーナツ。
+							</p>
+						</div>
+					</div>
+
+
+					<!-- 期間限定商品 -->
+					<div class="heading-mark-wrapper">
+						<h4 class="heading-mark">
+							期間限定商品
+						</h4>
+					</div>
+
+					<div class="limited-product-group">
+						<img class="img-responsive limited-product-img" src="images/sopaipillas.png" alt="Sopaipillas" >
+						<div class="limited-product">
+							<div class="limited-product-main">
+								<div class="limited-title-wrapper">
+									<h5 class="limited-product-title">
+										Sopaipillas
+									</h5>
+									<h6 class="limited-product-subtitle">
+										ソパイピヤ
+									</h6>
+								</div>
+								<p>カボチャと小麦粉を混ぜて、平らな円に成形し、揚げたパン。</p>	
+							</div>
+							<div class="limited-product-date">
+								<p>9<span>月</span>21<span>日</span></p>
+								<img src="images/arrows.png" alt="">
+								<p>11<span>月</span>6<span>日</span></p>
+							</div>			
+						</div>
+					</div>
+
+					<!-- その他商品 -->
+					<div class="heading-mark-wrapper">
+						<h4 class="heading-mark">
+							その他商品
+						</h4>
+					</div>
+
+					<div class="other-product-group">
+						<img class="img-responsive other-product-img" src="images/candy.png" alt="チリのお菓子" >
+						<div class="other-product">
+							<div class="other-product-wrapper">
+								<h5 class="other-product-title">
+									チリのお菓子
+								</h5>
+								<p>珍しいチリのチョコレートやキャンディーを量り売りでご購入いただけます。</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="other-product-group reverse">
+						<img class="img-responsive other-product-img" src="images/wine.png" alt="チリのワイン" >
+						<div class="other-product">
+							<div class="other-product-wrapper">
+								<h5 class="other-product-title">
+									チリのワイン
+								</h5>
+								<p>チリで人気のワインを用意しております！パンと合わせて大人な時間を。</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- ボタン -->
+					<div class="button product-btn-group">
+						<a href="#product" class="product-btn">お店で買える商品を全部見る<img class="button-arrow" src="images/arrow.png" alt=""></a>
+						<a href="#product" class="product-shortbtn">販売商品を全て見る<img class="button-arrow" src="images/arrow.png" alt=""></a>
+					</div>
+
+				</div>
+			</div>
+			<!-- ここまで商品 -->
+
+			<!-- ここからパン教室 -->
+			<div id="class" class="flex-container class-container">
+
+				<h2 class="title">Clases</h2>
+				<h3 class="subtitle">パン教室</h3>
+
+				<div class="class-img-group">
+					<img class="img-responsive class-img" src="images/class.png" alt="パン教室" >
+					<div class="class-img-flame"></div>
+				</div>
+				<div class="class">
+					<p>Pan de Leonardoで人気のパンを一緒に作ってみよう!</p>
+					<p>最大8名の少人数で、パンの作り方やチリの文化を学べるレッスンです。</p>
+					<p>小さなお子様も一緒に楽しめます！</p>
+				</div>
+
+				<div class="button class-btn-group">
+						<a href="#class" class="class-btn">パン教室について詳しく見る<img class="button-arrow" src="images/arrow.png" alt=""></a>
+						<a href="#class" class="class-shortbtn">パン教室の詳細を見る<img class="button-arrow" src="images/arrow.png" alt=""></a>
+					</div>
+			</div>
+			<!-- ここまでパン教室 -->
+
+			<!-- ここから店舗情報 -->
+			<div class="background">
+				<div id="information" class="flex-container information-container">
+
+					<h2 class="title">Informaci&oacute;n</h2>
+					<h3 class="subtitle">店舗情報</h3>
+
+					<div class="information-img-group">
+						<img class="img-responsive information-img" src="images/information.png" alt="Pan de Leonardo" >
+						<div class="information-img-flame"></div>
+					</div>
+
+					<div class="information">
+						<h4 class="information-title">
+							Pan de Leonardo
+						</h4>
+						<h5 class="information-subtitle">
+							- パン・デ・レオナルド -
+						</h5>
+						
+						<p>〒xxx-xxxx 東京都xx区xx xx-xx-xx<br><span class="space">&nbsp; &nbsp;</span><span class="fas fa-phone"></span><a href="tel:">03-1234-5678</a></p>
+						<p>xxx駅より徒歩5分&nbsp; &nbsp;駐車場なし<br><span class="space">&nbsp;</span>(お車でお越しの際は近隣の駐車場をご利用ください)</p>
+						<p>営業時間 8:00〜19:00 / 定休日毎週水曜日<br><span class="space">&nbsp; &nbsp;</span>イートイン 20席</p>
+					</div>
+
+					<div class="location-map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.620888694482!2d139.62537255125548!3d35.61241718011328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f415886c523d%3A0x66c6a0fd91cc71f2!2z5LqM5a2Q546J5bed6aeF!5e0!3m2!1sja!2sjp!4v1603857942859!5m2!1sja!2sjp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+
+				</div>
+			</div>
+			<!-- ここまで店舗情報 -->
+
+			<!-- ここからお問い合わせ -->
+			<div id="contact" class="flex-container contact-container">
+
+				<h2 class="title">Cont&aacute;ctenos</h2>
+				<h3 class="subtitle">お問い合わせ</h3>
+
+				<form id="my-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfD6N86tQLNyigebDyKZSSULzuMiv4beCTSyn54NtldevOGlw/formResponse"　method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
+					<div class="contact">
+						<p class="input-field">
+							<label for="your-name">お名前<span>※必須</span></label>
+							<div class="contact-answer">
+								<input id="your-name" type="text" name="entry.947864708" placeholder="山田 花子" required="">
+							</div>
+						</p>
+					</div>
+
+					<div class="contact">
+						<p class="input-field">
+							<label for="your-email">メールアドレス<span>※必須</span></label>
+							<div class="contact-answer">
+								<input id="your-email" type="text" name="entry.60854747" placeholder="mail@example.com" required="">
+							</div>
+						</p>
+					</div>
+
+					<div class="contact">
+						<p class="input-field">
+							<label for="your-number">電話番号</label>
+							<div class="contact-answer">
+								<input id="your-number" type="text" name="entry.1007417108" placeholder="00-1234-5678" >
+							</div>
+						</p>
+					</div>
+
+					<div class="contact">
+						<p class="textarea-field">
+							<label for="your-message">お問い合わせ内容<span>※必須</span></label>
+							<div class="contact-answer">
+								<textarea id="your-message" name="entry.693265251" placeholder="商品に関するお問い合わせ" required=""></textarea>
+							</div>
+						<p>
+					</div>
+
+					<div class="submit-btn">
+						<input class="submit" type="submit">
+					</div>
+				</form>
+				<script type="text/javascript">var submitted = false;</script>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+
+				<div class="contact-number">
+					<p>お電話でのお問い合わせは下記番号へお願い致します。</p>
+					<span class="fas fa-phone">&nbsp;</span>
+					<a href="tel:">03-1234-5678</a>
+				</div>
+
+			</div>
+			<!-- ここまでお問い合わせ -->
+
+		</main>
+
+		<!-- ここからフッター -->
+		<footer class="footer">
+			
+			<div class="footer-background">
+				<div class="flex-container footer-container">
+					
+					<div class="footer-logo">
+						<img src="images/footer-logo@2x.png" alt="Pan de Leonardo">
+					</div>
+	
+					<div class="footer-menu-group">
+						<div class="footer-menu-wrapper">
+							<a href="https://www.instagram.com/yukif_design/" class="instagram-icon"><span class="fab fa-instagram"></span></a>
+							<div class="footer-menu">
+								<ul class="footer-menu-list">
+									<li class="footer-list">
+										<a href="#">ホーム</a>
+									</li>
+									<li class="footer-list">
+											<a href="#concept">コンセプト</a>
+									</li>
+									<li class="footer-list">
+											<a href="#product">商品</a>
+									</li>
+									<li class="footer-list">
+											<a href="#class">パン教室</a>
+									</li>
+									<li class="footer-list">
+										<a href="#information">店舗情報</a>
+									</li>
+									<li class="footer-list">
+										<a href="#contact">お問い合わせ</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+							
+						<div class="language-menu">
+							<div class="language-icon">
+								<p><span class="fas fa-globe-americas"></span>
+								Language
+								<span class="fas fa-caret-right"></span></p>
+							</div>
+
+							<div class="language-menu-list-wrapper">
+								<ul class="language-menu-list">
+									<li class="language-list">
+										<a class="footer-japanese" href="#" lang="jp">
+											日本語
+										</a>
+									</li>
+									<li class="language-list">
+										<a class="footer-english" href="index_english.html" lang="en">
+											English
+										</a>
+									</li>
+									<li class="language-list">
+										<a href="index_spanish.html" lang="es">
+											Espa&ntilde;ol
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+					<div class="copyright">
+							<p><small>&copy; 2020 Pan de Leonardo</small></p>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+		<!-- ここまでフッター -->
+
+		<!-- TOPへ戻るアイコン -->
+		<div class="back-to-top">
+			<a href="#">
+				<div class="arrow-icon">
+					<img src="images/arrow.png" alt="">
+				</div>
+			<span>トップへ戻る</span>
+			</a>
+		</div>
+
+		<!-- ここからSP下部固定メニュー -->
+		<div class="sp-fixed-menu">
+			<ul class="sp-fixed-menu-list">
+				<li class="sp-fixed-list sp-fixed-information"><a href="#information">店舗情報</a></li>
+				<li class="sp-fixed-list"><a href="#contact">お問い合わせ</a></li>
+			</ul>
+		</div>
+		<!-- ここまでSP下部固定メニュー -->
+
+
+		<!------------------------------
+		Java Script
+		------------------------------->
+		<!-- ハンバーガーメニュー クリックで閉じる -->
+		<script>
+		$(function() {
+    		$('.drawer-menu a').on('click', function(event) {
+        	$('#drawerCheckbox').prop('checked', false);
+    		});
+		});
+		</script>
+
+		<!-- スクロール時ヘッダー固定 -->
+		<script>
+		window.onscroll = function () {
+			var check = window.pageYOffset ;       //現在のスクロール地点 
+			var docHeight = $(document).height();   //ドキュメントの高さ
+			var dispHeight = $(window).height();    //表示領域の高さ
+			var position = $(window).height() + $(window).scrollTop(); //ページトップから現在地までの高さ
+	
+			if(check > docHeight-dispHeight-500){   //判別式　500はフッターからの距離です（ここはサイトのフッターに合わせて変更しましょう）
+				$('.fixed-header-background').removeClass('fixed-header');
+			}else if(check < 200){
+				$('.fixed-header-background').removeClass('fixed-header');
+			}else{
+				$('.fixed-header-background').addClass('fixed-header');
+			}
+		};
+		</script>
+
+		<!-- 言語切り替えタブ -->
+		<script>
+		$('.dropdown-btn').hover(function() {
+			//カーソルが重なった時
+			$(this).children('.dropdown').addClass('open');
+			}, function() {
+			//カーソルが離れた時
+			$(this).children('.dropdown').removeClass('open');
+			});
+		</script>
+
+		<!-- メインビジュアルスライダー -->
+		<script type="text/javascript">
+
+		$(function() {
+
+			$('.hero').slick({
+	  		autoplay: true,
+    		autoplaySpeed: 3000,
+	  		dots: true,
+	  		infinite: true,
+	  		speed: 1000,
+	  		fade: true,
+	  		cssEase: 'linear',
+	  		arrows: false
+			});
+		});
+
+		</script>
+
+		<script>
+		$(function() {
+		var topBtn = $('.back-to-top');
+		    topBtn.hide();
+    		//スクロールしてページトップから700に達したらボタンを表示
+    		$(window).scroll(function () {
+        		if ($(this).scrollTop() > 600) {
+		            topBtn.fadeIn();
+        		} else {
+            		topBtn.fadeOut();
+        		}
+        		scrollHeight = $(document).height(); //ドキュメントの高さ 
+		        scrollPosition = $(window).height() + $(window).scrollTop(); //現在地 
+		        footHeight = $("footer").innerHeight(); //止めたい位置の高さ(今回はfooter)
+		        if (scrollHeight - scrollPosition <= footHeight) { //ドキュメントの高さと現在地の差がfooterの高さ以下の時
+		            if (window.matchMedia( "(max-width: 560px)" ).matches) {
+		            	$(topBtn).css({
+			                "position": "absolute", //pisitionをabsoluteに変更
+			                "bottom": "230px"
+		            	});
+		            } else {
+						$(topBtn).css({
+			                "position": "absolute", //固定表示
+			                "bottom": "250px"
+			            });
+					}
+		        } else { //それ以外の場合は
+	                if (window.matchMedia( "(max-width: 560px)" ).matches) {
+			            $(topBtn).css({
+			                "position": "fixed", //固定表示
+			                "bottom": "55px"
+			            });
+					} else {
+						$(topBtn).css({
+			                "position": "fixed", //固定表示
+			                "bottom": "30px"
+			            });
+					}
+		        }
+    		});
+		});
+		</script>
+
+	</body>
+</html>
