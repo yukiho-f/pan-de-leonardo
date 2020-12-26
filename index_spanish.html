@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pan de Leonardo</title>
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+
+		<!-- Reset CSS -->
+		<link rel="stylesheet" href="reset.min.css" media="all">
+		
+		<!-- Googleフォント -->
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+		<!-- Adobeフォント -->
+		<script>
+		  (function(d) {
+		    var config = {
+		      kitId: 'xfl7qbm',
+		      scriptTimeout: 3000,
+		      async: true
+		    },
+		    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		  })(document);
+		</script>
+		
+		<!-- Slick CSS -->
+		<link rel="stylesheet" href="slick/slick.css" media="all">
+		<link rel="stylesheet" href="slick/slick-theme.css">
+
+		<!-- fontawesome CSS -->
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="style_spanish.css">
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script src="slick/slick.min.js"></script>
+
+		<!-- ScrollReveal -->
+		<script src="https://unpkg.com/scrollreveal"></script>
+
+		<!-- smooth-scroll -->
+		<script src="smooth-scroll.min.js"></script>
+
+		<script type="text/javascript">
+			var scroll = new SmoothScroll('a[href*="#"]',{
+			header: '#header-nav',
+			speed: 600
+		});
+		</script>
+		
+		<link rel="icon" type="image/png" href="images/favicon.png">
+
+	</head>
+
+	<body>
+		
+		<!-- ここからヘッダー -->
+		<header class="header">
+			
+			<!-- ハンバーガーメニュー -->
+			<!-- ドロワー -->
+			<div class="drawer">
+				<input type="checkbox" class="drawer-checkbox" id="drawerCheckbox">
+				<!-- ドロワーアイコン部分 -->
+				<label for="drawerCheckbox" class="drawer-icon">
+					<span class="drawer-icon-menu"></span>
+				</label>
+				<!-- ドロワー内のメニュー -->
+				<nav class="drawer-menu">
+					<ul>
+						<li class="li-border">
+							<a href="#" class="drawer-menu-item">
+								Casa
+							</a>
+						</li>
+						<li>
+							<a href="#concept" class="drawer-menu-item">
+								Concepto
+							</a>
+						</li>
+						<li class="li-border">
+							<a href="#product" class="drawer-menu-item">
+								Productos
+							</a>
+						</li>
+						<li>
+							<a href="#meetup" class="drawer-menu-item">
+								Reuni&oacute;n
+							</a>
+						</li>
+						<li class="li-border">
+							<a href="#information" class="drawer-menu-item">
+								Informaci&oacute;n
+							</a>
+						</li>
+						<li>
+							<a href="#contact" class="drawer-menu-item">
+								Cont&aacute;ctenos
+							</a>
+						</li>
+					</ul>
+
+					<div class="drawer-language">
+						<div class="drawer-language-wrapper">
+							<div class="drawer-language-topitem">
+					      		<span class="fas fa-globe-americas"></span>
+								Language
+								<span class="fas fa-caret-down"></span>
+							</div>
+							<div class="drawer-language-bottomitem">
+						      	<a class="drawer-japanese" href="index.html" lang="jp">日本語</a>
+						      	<a class="drawer-english" href="index_english.html" lang="en">English</a>
+						      	<a href="#" lang="es">Espa&ntilde;ol</a>
+					     	</div>
+				     	</div>
+	      			</div>
+
+				</nav>
+			</div>
+			
+			<!-- スクロール時上部固定ヘッダー -->
+			<div class="fixed-header-background">
+				<div class="flex-container fixed-header-container">
+					
+					<img src="images/fixed-logo@2x.png" alt="Pan de Leonardo" class="fixed-header-logo">
+
+					<nav class="fixed-gnav">
+						<ul class="fixed-gnav-list">
+							<li class="fixed-gnav-list-item">
+								<a href="#">
+									Casa
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#concept">
+									Concepto
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#product">
+									Productos
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#meetup">
+									Reuni&oacute;n
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#information">
+									Informaci&oacute;n
+								</a>
+							</li>
+							<li class="fixed-gnav-list-item">
+								<a href="#contact">
+									Cont&aacute;ctenos
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="fixed-number">
+						<span class="fas fa-phone"></span>
+						<a href="tel:">03-1234-5678</a>
+					</div>
+
+				</div>
+			</div>
+
+
+			<!-- 通常ヘッダー -->
+			<div class="header-background">
+				<div class="flex-container header-container">
+					
+					<h1>
+						<img src="images/header-logo@2x.png" alt="Pan de Leonardo" class="header-logo">
+					</h1>
+
+					<nav class="gnav">
+						<ul class="gnav-list">
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#">
+										Casa
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#concept">
+										Concepto
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#product">
+										Productos
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#meetup">
+										Reuni&oacute;n
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#information">
+										Informaci&oacute;n
+									</a>
+								</div>
+							</li>
+							<li class="gnav-list-item">
+								<div class="gnav-list-wrapper">
+									<a href="#contact">
+										Cont&aacute;ctenos
+									</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="dropdown-btn">
+						<div class="dropdown-list">
+							<span class="fas fa-globe-americas"></span>
+							Language
+							<span class="fas fa-caret-down"></span>	
+						</div>
+
+						<ul class="dropdown-menu dropdown">
+							<li class="dropdown-menu-list">
+								<a class="language japanese" href="index.html" lang="jp">
+									日本語
+								</a>
+							</li>
+							<li class="dropdown-menu-list">
+								<a class="language english" href="index_english.html" lang="en">
+									English
+								</a>
+							</li>
+							<li class="dropdown-menu-list">
+								<a class="language espanol" href="#" lang="es">
+									Espa&ntilde;ol
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</header>
+		<!-- ここまでヘッダー -->
+
+		<main class="main">
+
+			<!-- ここからヒーローイメージ -->
+			<div class="hero">
+				
+				<div class="hero-contents-wrapper">
+					<a href="#"><img src="images/main-visual1@2x.png" alt="">
+						<div class="hero-contents">
+							<div class="hero-title">
+								<img src="images/main-logo@2x.png" alt="Pan de Leonardo">
+							</div>
+							<div class="hero-lead">
+								<p>“Trayendo un poco de sabor <br> de Chile a Japón.”</p>
+							</div>
+						</div>
+						<a href="#concept" class="top-scroll">
+						DESPLAZARSE</a>
+					</a>
+				</div>
+
+				<div class="hero-contents-wrapper">
+					<a href="#">
+						<img class="pc" src="images/main-visual2-pc@2x.png" alt="">
+						<img class="sp" src="images/main-visual2-sp@2x.png" alt="">
+						<div class="hero-contents">
+							<div class="hero-title">
+								<img src="images/main-logo@2x.png" alt="Pan de Leonardo">
+							</div>
+							<div class="hero-lead">
+								<p>
+								Tenemos pan, pasteles, dulces y <br> vinos chilenos para que los disfrutes.</p>
+							</div>
+						</div>
+						<a href="#concept" class="top-scroll">
+						DESPLAZARSE</a>
+					</a>
+				</div>
+
+				<div class="hero-contents-wrapper">
+					<a href="#"><img src="images/main-visual4@2x.png" alt="">
+						<div class="hero-contents">
+							<div class="hero-title">
+								<img src="images/main-logo@2x.png" alt="Pan de Leonardo">
+							</div>
+							<div class="hero-lead">
+								<p>Ven a nuestras reuniones y interactúa <br> con otros extranjeros que visitan o viven <br> en Japón.</p>
+							</div>
+						</div>
+						<a href="#concept" class="top-scroll">
+						DESPLAZARSE</a>
+					</a>
+				</div>
+
+			</div>
+			<!-- ここまでヒーローイメージ -->
+
+
+			<!-- ここからコンセプト -->
+			<div id="concept" class="flex-container concept-container">
+
+				<h2 class="title">Concepto</h2>
+
+				<div class="concept-img-group">
+					<img class="img-responsive concept-img" src="images/concept.png" alt="Pan de Leonardoオーナー" >
+					<div class="concept-img-flame"></div>
+				</div>
+				<div class="concept">
+					<p>El propietario, Leonardo, decidió iniciar Pan de Leonardo basándose en el concepto "Traer un poco de Chile a Japón".</p>
+					<p>Pan de Leonardo no solo es una panadería chilena, sino también la base de una comunidad hispana. Puede ser difícil vivir en un país extranjero, por lo que esta panadería tiene como objetivo ser una comunidad en la que todos los hispanos puedan sentirse como en casa.</p>
+				</div>
+
+				<div class="button concept-btn-group">
+					<a href="#concept" class="concept-btn">Más información sobre Pan de Leonardo<img class="button-arrow" src="images/arrow.png" alt=""></a>
+					<a href="#concept" class="concept-shortbtn">Más información<img class="button-arrow" src="images/arrow.png" alt=""></a>
+				</div>
+			</div>
+			<!-- ここまでがコンセプト -->
+
+			<!-- ここからが商品 -->
+			<div class="background">
+				<div id="product" class="container">
+					
+					<h2 class="title">Productos</h2>
+
+					<!-- 定番商品 -->
+					<div class="heading-mark-wrapper">
+						<h4 class="heading-mark product-heading-mark">
+							Productos regulares
+						</h4>
+					</div>
+
+					<div class="product-group">
+						<div class="product-item">
+							<img src="images/empanada.png" alt="Empanadas" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Empanada
+								</h5>
+							</div>
+							<p class="product-text">
+								Pan horneado relleno de carne molida, cebolla, huevo cocido y aceituna.
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/marraqueta.png" alt="Marraqueta" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Marraqueta
+								</h5>
+							</div>
+							<p class="product-text">
+								Pan elaborado con harina, sal, agua y levadura, similar al pan francés.
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/tres-leches-cake.png" alt="Tres leches cake" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Tres leches cake
+								</h5>
+							</div>
+							<p class="product-text">
+								Pastel de mantequilla empapado en 3 tipos de leche (leche evaporada, leche condensada y crema espesa).
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/hallulla.png" alt="Hallulla" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Hallulla
+								</h5>
+							</div>
+							<p class="product-text">
+								Pan horneado plano y redondo de textura similar al bollo. A menudo se sirve con Pebre.
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/empolvados.png" alt="Empolvados" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Empolvados
+								</h5>
+							</div>
+							<p class="product-text">
+								Hojaldre relleno de manjar (dulce de leche) y cubierto con azúcar en polvo.
+							</p>
+						</div>
+
+						<div class="product-item">
+							<img src="images/berlin.png" alt="Berlín" class="product-img">
+							<div class="product-title-wrapper">
+								<h5 class="product-title">
+									Berl&iacute;n
+								</h5>
+							</div>
+							<p class="product-text">
+								Pastelería de origen austro-alemán relleno de crema pastelera.
+							</p>
+						</div>
+					</div>
+
+
+					<!-- 期間限定商品 -->
+					<div class="heading-mark-wrapper">
+						<h4 class="heading-mark">
+							Productos limitados
+						</h4>
+					</div>
+
+					<div class="limited-product-group">
+						<img class="img-responsive limited-product-img" src="images/sopaipillas.png" alt="Sopaipillas" >
+						<div class="limited-product">
+							<div class="limited-product-main">
+								<div class="limited-title-wrapper">
+									<h5 class="limited-product-title">
+										Sopaipillas
+									</h5>
+								</div>
+								<p>Masa plana de calabaza frita y harina.</p>	
+							</div>
+							<div class="limited-product-date">
+								<p>09/21st</p>
+								<img src="images/arrows.png" alt="">
+								<p>11/6th</p>
+							</div>			
+						</div>
+					</div>
+
+					<!-- その他商品 -->
+					<div class="heading-mark-wrapper">
+						<h4 class="heading-mark">
+							Otros productos
+						</h4>
+					</div>
+
+					<div class="other-product-group">
+						<img class="img-responsive other-product-img" src="images/candy.png" alt="Chilean candies" >
+						<div class="other-product">
+							<div class="other-product-wrapper">
+								<h5 class="other-product-title">
+									Dulces chilenos
+								</h5>
+								<p>Contamos con chocolates y dulces chilenos para comprar por peso.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="other-product-group reverse">
+						<img class="img-responsive other-product-img" src="images/wine.png" alt="Chilean wines" >
+						<div class="other-product">
+							<div class="other-product-wrapper">
+								<h5 class="other-product-title">
+									Vinos chilenos
+								</h5>
+								<p>Tenemos vinos chilenos populares para acompañar nuestros panes.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- ボタン -->
+					<div class="button product-btn-group">
+						<a href="#product" class="product-btn">Más información sobre productos<img class="button-arrow" src="images/arrow.png" alt=""></a>
+						<a href="#product" class="product-shortbtn">Más información<img class="button-arrow" src="images/arrow.png" alt=""></a>
+					</div>
+
+				</div>
+			</div>
+			<!-- ここまで商品 -->
+
+			<!-- ここからミートアップ -->
+			<div id="meetup" class="flex-container meetup-container">
+
+				<h2 class="title">Reuni&oacute;n</h2>
+
+				<div class="meetup-img-group">
+					<img class="img-responsive meetup-img" src="images/meetup@2x.png" alt="Meetup" >
+					<div class="meetup-img-flame"></div>
+				</div>
+				<div class="meetup">
+					<p>Pan de Leonardo es un lugar maravilloso
+					para que visites y te reúnas con otros
+					extranjeros que viajen o vivan en Japón.</p>
+					<p>Organizamos una reunión a las 7 pm todos los viernes en Pan de Leonardo.</p>
+				</div>
+
+				<div class="button meetup-btn-group">
+						<a href="#meetup" class="meetup-btn">Más información sobre meetup<img class="button-arrow" src="images/arrow.png" alt=""></a>
+						<a href="#meetup" class="meetup-shortbtn">Más información<img class="button-arrow" src="images/arrow.png" alt=""></a>
+					</div>
+			</div>
+			<!-- ここまでミートアップ -->
+
+			<!-- ここから店舗情報 -->
+			<div class="background">
+				<div id="information" class="flex-container information-container">
+
+					<h2 class="title">Informaci&oacute;n</h2>
+
+					<div class="information-img-group">
+						<img class="img-responsive information-img" src="images/information.png" alt="Pan de Leonardo" >
+						<div class="information-img-flame"></div>
+					</div>
+
+					<div class="information">
+						<h4 class="information-title">
+							Pan de Leonardo
+						</h4>
+						
+						<p>xx-xx-xx, xx-ku, Tokyo xxx-xxxx<br><span class="space">&nbsp; &nbsp;</span><span class="fas fa-phone"></span><a href="tel:">03-1234-5678</a></p>
+						<p>5 minutos a pie desde la estación xxx, <br><span class="space">&nbsp;</span>No hay estacionamiento en la panadería.</p>
+						<p>Abierto de 8 am a 7 pm / Miércoles está cerrado,<br><span class="space">&nbsp; &nbsp;</span>20 asientos en espacio para comer.</p>
+					</div>
+
+					<div class="location-map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12974.617891247348!2d139.61785299754013!3d35.611588929700744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f415824db46d%3A0x189c10950293c70d!2sFutako-Tamagawa%20Sta.!5e0!3m2!1sen!2sjp!4v1604629691852!5m2!1sen!2sjp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+
+				</div>
+			</div>
+			<!-- ここまで店舗情報 -->
+
+			<!-- ここからお問い合わせ -->
+			<div id="contact" class="flex-container contact-container">
+
+				<h2 class="title">Cont&aacute;ctenos</h2>
+
+				<form id="my-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfD6N86tQLNyigebDyKZSSULzuMiv4beCTSyn54NtldevOGlw/formResponse"　method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
+					<div class="contact">
+						<p class="input-field">
+							<label for="your-name">Nombre completo<span>*necesario</span></label>
+							<div class="contact-answer">
+								<input id="your-name" type="text" name="entry.947864708" required="">
+							</div>
+						</p>
+					</div>
+
+					<div class="contact">
+						<p class="input-field">
+							<label for="your-email">Correo electrónico<span>*necesario</span></label>
+							<div class="contact-answer">
+								<input id="your-email" type="text" name="entry.60854747"  required="">
+							</div>
+						</p>
+					</div>
+
+					<div class="contact">
+						<p class="input-field">
+							<label for="your-number">Teléfono</label>
+							<div class="contact-answer">
+								<input id="your-number" type="text" name="entry.1007417108" >
+							</div>
+						</p>
+					</div>
+
+					<div class="contact">
+						<p class="textarea-field">
+							<label for="your-message">Comentarios<span>*necesario</span></label>
+							<div class="contact-answer">
+								<textarea id="your-message" name="entry.693265251" required=""></textarea>
+							</div>
+						<p>
+					</div>
+
+					<div class="submit-btn">
+						<input class="submit" type="submit" value="Enviar">
+					</div>
+				</form>
+				<script type="text/javascript">var submitted = false;</script>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+
+				<div class="contact-number">
+					<p>Comuníquese con el siguiente número de teléfono si es necesario.</p>
+					<span class="fas fa-phone">&nbsp;</span>
+					<a href="tel:">03-1234-5678</a>
+				</div>
+
+			</div>
+			<!-- ここまでお問い合わせ -->
+
+		</main>
+
+		<!-- ここからフッター -->
+		<footer class="footer">
+			
+			<div class="footer-background">
+				<div class="flex-container footer-container">
+					
+					<div class="footer-logo">
+						<img src="images/footer-logo@2x.png" alt="Pan de Leonardo">
+					</div>
+	
+					<div class="footer-menu-group">
+						<div class="footer-menu-wrapper">
+							<a href="https://www.instagram.com/yukif_design/" class="instagram-icon"><span class="fab fa-instagram"></span></a>
+							<div class="footer-menu">
+								<ul class="footer-menu-list">
+									<li class="footer-list">
+										<a href="#">Casa</a>
+									</li>
+									<li class="footer-list">
+										<a href="#concept">Concepto</a>
+									</li>
+									<li class="footer-list">
+										<a href="#product">Productos</a>
+									</li>
+									<li class="footer-list">
+										<a href="#meetup">Reuni&oacute;n</a>
+									</li>
+									<li class="footer-list">
+										<a href="#information">Informaci&oacute;n</a>
+									</li>
+									<li class="footer-list">
+										<a href="#contact">Cont&aacute;ctenos</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+							
+						<div class="language-menu">
+							<div class="language-icon">
+								<p><span class="fas fa-globe-americas"></span>
+								Language
+								<span class="fas fa-caret-right"></span></p>
+							</div>
+
+							<div class="language-menu-list-wrapper">
+								<ul class="language-menu-list">
+									<li class="language-list">
+										<a class="footer-japanese" href="index.html" lang="jp">
+											日本語
+										</a>
+									</li>
+									<li class="language-list">
+										<a class="footer-english" href="index_english.html" lang="en">
+											English
+										</a>
+									</li>
+									<li class="language-list">
+										<a href="#" lang="es">
+											Espa&ntilde;ol
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+					<div class="copyright">
+							<p><small>&copy; 2020 Pan de Leonardo</small></p>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+		<!-- ここまでフッター -->
+
+		<!-- TOPへ戻るアイコン -->
+		<div class="back-to-top">
+			<a href="#">
+				<div class="arrow-icon">
+					<img src="images/arrow.png" alt="">
+				</div>
+			<span>VOLVER ARRIBA</span>
+			</a>
+		</div>
+
+		<!-- ここからSP下部固定メニュー -->
+		<div class="sp-fixed-menu">
+			<ul class="sp-fixed-menu-list">
+				<li class="sp-fixed-list sp-fixed-information"><a href="#information">Informaci&oacute;n</a></li>
+				<li class="sp-fixed-list"><a href="#contact">Cont&aacute;ctenos</a></li>
+			</ul>
+		</div>
+		<!-- ここまでSP下部固定メニュー -->
+
+
+		<!------------------------------
+		Java Script
+		------------------------------->
+		<!-- ハンバーガーメニュー クリックで閉じる -->
+		<script>
+		$(function() {
+    		$('.drawer-menu a').on('click', function(event) {
+        	$('#drawerCheckbox').prop('checked', false);
+    		});
+		});
+		</script>
+
+		<!-- スクロール時ヘッダー固定 -->
+		<script>
+		window.onscroll = function () {
+			var check = window.pageYOffset ;       //現在のスクロール地点 
+			var docHeight = $(document).height();   //ドキュメントの高さ
+			var dispHeight = $(window).height();    //表示領域の高さ
+			var position = $(window).height() + $(window).scrollTop(); //ページトップから現在地までの高さ
+	
+			if(check > docHeight-dispHeight-500){   //判別式　500はフッターからの距離です（ここはサイトのフッターに合わせて変更しましょう）
+				$('.fixed-header-background').removeClass('fixed-header');
+			}else if(check < 200){
+				$('.fixed-header-background').removeClass('fixed-header');
+			}else{
+				$('.fixed-header-background').addClass('fixed-header');
+			}
+		};
+		</script>
+
+		<!-- 言語切り替えタブ -->
+		<script>
+		$('.dropdown-btn').hover(function() {
+			//カーソルが重なった時
+			$(this).children('.dropdown').addClass('open');
+			}, function() {
+			//カーソルが離れた時
+			$(this).children('.dropdown').removeClass('open');
+			});
+		</script>
+
+		<!-- メインビジュアルスライダー -->
+		<script type="text/javascript">
+
+		$(function() {
+
+			$('.hero').slick({
+	  		autoplay: true,
+    		autoplaySpeed: 3000,
+	  		dots: true,
+	  		infinite: true,
+	  		speed: 1000,
+	  		fade: true,
+	  		cssEase: 'linear',
+	  		arrows: false
+			});
+		});
+
+		</script>
+
+		<!-- TOPへ戻るアイコン スクロールで表示・フッター前で止める -->
+		<script>
+		$(function() {
+		var topBtn = $('.back-to-top');
+		    topBtn.hide();
+    		//スクロールしてページトップから700に達したらボタンを表示
+    		$(window).scroll(function () {
+        		if ($(this).scrollTop() > 600) {
+		            topBtn.fadeIn();
+        		} else {
+            		topBtn.fadeOut();
+        		}
+        		scrollHeight = $(document).height(); //ドキュメントの高さ 
+		        scrollPosition = $(window).height() + $(window).scrollTop(); //現在地 
+		        footHeight = $("footer").innerHeight(); //止めたい位置の高さ(今回はfooter)
+		        if (scrollHeight - scrollPosition <= footHeight) { //ドキュメントの高さと現在地の差がfooterの高さ以下の時
+		            if (window.matchMedia( "(max-width: 560px)" ).matches) {
+		            	$(topBtn).css({
+			                "position": "absolute", //pisitionをabsoluteに変更
+			                "bottom": "230px"
+		            	});
+		            } else {
+						$(topBtn).css({
+			                "position": "absolute", //固定表示
+			                "bottom": "250px"
+			            });
+					}
+		        } else { //それ以外の場合は
+	                if (window.matchMedia( "(max-width: 560px)" ).matches) {
+			            $(topBtn).css({
+			                "position": "fixed", //固定表示
+			                "bottom": "60px"
+			            });
+					} else {
+						$(topBtn).css({
+			                "position": "fixed", //固定表示
+			                "bottom": "30px"
+			            });
+					}
+		        }
+    		});
+		});
+		</script>
+
+	</body>
+</html>
