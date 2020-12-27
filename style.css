@@ -7,12 +7,15 @@ PC；画面の横幅 961-2000px (961px以上)
 /*====================================
 サイト共通
 ====================================*/
+* {
+  -webkit-appearance: none;
+}
+
 body{
 	color: #201400;
 	font-family: 'Noto Sans JP', sans-serif;
 	background-color: #FFFCF6;
 	line-height: 160%;
-	position: relative;
 }
 
 /*背景色*/
@@ -399,7 +402,7 @@ body{
 
 	top: 0px; /*上に隠す*/
 	position: fixed;
-	opacity: 0; /*最初読み込んだ時は透過*/
+	display: none;
 	z-index: 1001;
 
 	transition: all 0.3s;
@@ -420,6 +423,10 @@ body{
 .fixed-header-logo{
 	height: 23px;
 	width: auto;
+}
+
+.fixed-header-logo-link{
+	display: inline-block;
 }
 
 /*グロナビ */
@@ -482,7 +489,6 @@ body{
 
 .fixed-header{
 	display: block;
-	opacity: 1;
 }
 
 /*通常ヘッダー*/
@@ -505,6 +511,10 @@ body{
 .header-logo{
 	height: 80px;
 	width: auto;
+}
+
+.header-logo-link{
+	display: inline-block;
 }
 
 /*グロナビ */
@@ -577,7 +587,6 @@ body{
 .dropdown-list{
 	cursor: pointer;
 }
-
 
 .dropdown-list{
 	width:150px;
@@ -838,6 +847,10 @@ body{
 	margin-top: 50px;
 }
 
+.concept-btn{
+	display: block;
+}
+
 .concept-btn-group a{
 	position: relative;
 }
@@ -847,8 +860,8 @@ body{
 	width: auto;
 
 	position: absolute;
-	top: 4px;
-	left: 315px;
+	top: 20px;
+	left: 355px;
 }
 
 .concept-btn-group a:hover{
@@ -856,7 +869,7 @@ body{
 }
 
 .concept-btn-group a:hover img{
-	left: 322px;
+	left: 362px;
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -1075,6 +1088,10 @@ body{
 	margin-top: 50px;
 }
 
+.product-btn{
+	display: block;
+}
+
 .product-btn-group a{
 	position: relative;
 }
@@ -1084,8 +1101,8 @@ body{
 	width: auto;
 
 	position: absolute;
-	top: 4px;
-	left: 245px;
+	top: 20px;
+	left: 285px;
 }
 
 .product-btn-group a:hover{
@@ -1093,7 +1110,7 @@ body{
 }
 
 .product-btn-group a:hover img{
-	left: 252px;
+	left: 292px;
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -1150,6 +1167,10 @@ body{
 	margin-top: 50px;
 }
 
+.class-btn{
+	display: block;
+}
+
 .class-btn-group a{
 	position: relative;
 }
@@ -1159,8 +1180,8 @@ body{
 	width: auto;
 
 	position: absolute;
-	top: 4px;
-	left: 245px;
+	top: 20px;
+	left: 285px;
 }
 
 .class-btn-group a:hover{
@@ -1168,7 +1189,7 @@ body{
 }
 
 .class-btn-group a:hover img{
-	left: 252px;
+	left: 292px;
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -1309,6 +1330,8 @@ input{
 	font-size: 16px;
 	letter-spacing: 0.04em;
 	margin: 0 0 3px 3px;
+
+	box-sizing: border-box;
 }
 
 textarea{
@@ -1323,6 +1346,8 @@ textarea{
 	font-size: 16px;
 	letter-spacing: 0.04em;
 	margin-left: 3px;
+
+	box-sizing: border-box;
 }
 
 .submit-btn{
@@ -1407,6 +1432,10 @@ textarea{
 	width: auto;
 
 	margin-top: 40px;
+}
+
+.footer-logo-link{
+	display: inline-block;
 }
 
 .footer-menu-wrapper{
@@ -1793,12 +1822,11 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .concept-btn-group img{
-	top: 4px;
-	left: 99px;
+	left: 254px;
 }
 
 .concept-btn-group a:hover img{
-	left: 106px;
+	left: 261px;
 }
 
 .concept-btn{
@@ -1806,7 +1834,7 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .concept-shortbtn{
-	display: inline;
+	display: block;
 }
 
 /*商品*/
@@ -1899,12 +1927,11 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .product-btn-group img{
-	top: 4px;
-	left: 170px;
+	left: 289px;
 }
 
 .product-btn-group a:hover img{
-	left: 177px;
+	left: 296px;
 }
 
 .product-btn{
@@ -1912,7 +1939,7 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .product-shortbtn{
-	display: inline;
+	display: block;
 
 	margin-top: 20px;
 }
@@ -1936,12 +1963,11 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .class-btn-group img{
-	top: 4px;
-	left: 189px;
+	left: 297px;
 }
 
 .class-btn-group a:hover img{
-	left: 196px;
+	left: 304px;
 }
 
 .class-btn{
@@ -1949,7 +1975,7 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .class-shortbtn{
-	display: inline;
+	display: block;
 
 	margin-top: 25px;
 }
