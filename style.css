@@ -1081,7 +1081,7 @@ body{
 
 /*商品ボタン*/
 .product-btn-group{
-	width: 320px;
+	width: 390px;
 
 	margin-right: auto;
 	margin-left: auto;
@@ -1102,7 +1102,7 @@ body{
 
 	position: absolute;
 	top: 20px;
-	left: 285px;
+	left: 320px;
 }
 
 .product-btn-group a:hover{
@@ -1110,7 +1110,7 @@ body{
 }
 
 .product-btn-group a:hover img{
-	left: 292px;
+	left: 322px;
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -1160,7 +1160,7 @@ body{
 }
 
 .class-btn-group{
-	width: 320px;
+	width: 390px;
 
 	margin-right: auto;
 	margin-left: auto;
@@ -1181,7 +1181,7 @@ body{
 
 	position: absolute;
 	top: 20px;
-	left: 285px;
+	left: 320px;
 }
 
 .class-btn-group a:hover{
@@ -1189,7 +1189,7 @@ body{
 }
 
 .class-btn-group a:hover img{
-	left: 292px;
+	left: 322px;
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -1284,7 +1284,7 @@ body{
 .input-field{
 	display: block;
 	width: 297px;
-	height: 49px;
+	height: 45px;
 	background-color: #D4B681;
 
 	color: #FAF5EF;
@@ -1304,7 +1304,7 @@ body{
 .textarea-field{
 	display: block;
 	width: 297px;
-	height: 131px;
+	height: 125px;
 	background-color: #D4B681;
 
 	color: #FAF5EF;
@@ -1822,11 +1822,11 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .concept-btn-group img{
-	left: 254px;
+	left: 65%;
 }
 
 .concept-btn-group a:hover img{
-	left: 261px;
+	left: 67%;
 }
 
 .concept-btn{
@@ -1927,11 +1927,11 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .product-btn-group img{
-	left: 289px;
+	left: 75%;
 }
 
 .product-btn-group a:hover img{
-	left: 296px;
+	left: 77%;
 }
 
 .product-btn{
@@ -1963,11 +1963,11 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .class-btn-group img{
-	left: 297px;
+	left: 78%;
 }
 
 .class-btn-group a:hover img{
-	left: 304px;
+	left: 80%;
 }
 
 .class-btn{
@@ -2335,6 +2335,14 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 	margin-top: 20px;
 }
 
+.concept-btn-group img{
+	left: 71%;
+}
+
+.concept-btn-group a:hover img{
+	left: 73%;
+}
+
 /*商品*/
 
 /*定番商品*/
@@ -2355,6 +2363,14 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 	margin-top: 10px;
 }
 
+.product-btn-group img{
+	left: 84%;
+}
+
+.product-btn-group a:hover img{
+	left: 86%;
+}
+
 /*パン教室*/
 .class-img-flame{
 	display: none;
@@ -2363,6 +2379,14 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 .class-btn-group{
 	width: 100%;
 	margin-top: 35px;
+}
+
+.class-btn-group img{
+	left: 88%;
+}
+
+.class-btn-group a:hover img{
+	left: 90%;
 }
 
 /*店舗情報*/
@@ -2434,5 +2458,4 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 
 
 }
-
 
