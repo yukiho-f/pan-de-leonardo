@@ -819,12 +819,12 @@
 		        if (scrollHeight - scrollPosition <= footHeight) { //ドキュメントの高さと現在地の差がfooterの高さ以下の時
 		            if (window.matchMedia( "(max-width: 560px)" ).matches) {
 		            	$(topBtn).css({
-			                "position": "absolute", //pisitionをabsoluteに変更
-			                "bottom": "230px"
+			                "position": "fixed", //pisitionをabsoluteに変更
+			                "bottom": "280px"
 		            	});
 		            } else {
 						$(topBtn).css({
-			                "position": "absolute", //固定表示
+			                "position": "fixed", //固定表示
 			                "bottom": "250px"
 			            });
 					}
