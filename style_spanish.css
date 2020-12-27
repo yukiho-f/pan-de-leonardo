@@ -7,11 +7,16 @@ PC；画面の横幅 961-2000px (961px以上)
 /*====================================
 サイト共通
 ====================================*/
+* {
+  -webkit-appearance: none;
+}
+
 body{
 	color: #201400;
 	font-family: 'Noto Sans JP', sans-serif;
 	background-color: #FFFCF6;
 	line-height: 160%;
+
 	position: relative;
 }
 
@@ -367,7 +372,7 @@ body{
 
 	top: 0px; /*上に隠す*/
 	position: fixed;
-	opacity: 0; /*最初読み込んだ時は透過*/
+	display: none;
 	z-index: 1001;
 
 	transition: all 0.3s;
@@ -388,6 +393,10 @@ body{
 .fixed-header-logo{
 	height: 23px;
 	width: auto;
+}
+
+.fixed-header-logo-link{
+	display: inline-block;
 }
 
 /*グロナビ */
@@ -450,7 +459,6 @@ body{
 
 .fixed-header{
 	display: block;
-	opacity: 1;
 }
 
 /*通常ヘッダー*/
@@ -473,6 +481,10 @@ body{
 .header-logo{
 	height: 80px;
 	width: auto;
+}
+
+.header-logo-link{
+	display: inline-block;
 }
 
 /*グロナビ */
@@ -782,6 +794,10 @@ body{
 	margin-top: 50px;
 }
 
+.concept-btn{
+	display: block;
+}
+
 .concept-btn-group a{
 	position: relative;
 }
@@ -791,8 +807,8 @@ body{
 	width: auto;
 	
 	position: absolute;
-	top: 5px;
-	left: 353px;
+	top: 20px;
+	left: 397px;
 }
 
 .concept-btn-group a:hover{
@@ -800,7 +816,7 @@ body{
 }
 
 .concept-btn-group a:hover img{
-	left: 360px;
+	left: 404px;
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -840,7 +856,7 @@ body{
 	width: 100%;
 	height:50px;
 	text-align: center;
-	margin-top: -6px;
+	margin-top: -7px;
 }
 
 .product-title{
@@ -1007,11 +1023,15 @@ body{
 
 /*商品ボタン*/
 .product-btn-group{
-	width: 380px;
+	width: 435px;
 
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 50px;
+}
+
+.product-btn{
+	display: block;
 }
 
 .product-btn-group a{
@@ -1023,8 +1043,8 @@ body{
 	width: auto;
 	
 	position: absolute;
-	top: 5px;
-	left: 296px;
+	top: 20px;
+	left: 369px;
 }
 
 .product-btn-group a:hover{
@@ -1032,7 +1052,7 @@ body{
 }
 
 .product-btn-group a:hover img{
-	left: 303px;
+	left: 376px;
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -1086,11 +1106,15 @@ body{
 }
 
 .meetup-btn-group{
-	width: 360px;
+	width: 435px;
 
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 50px;
+}
+
+.meetup-btn{
+	display: block;
 }
 
 .meetup-btn-group a{
@@ -1102,8 +1126,8 @@ body{
 	width: auto;
 	
 	position: absolute;
-	top: 5px;
-	left: 272px;
+	top: 20px;
+	left: 357px;
 }
 
 .meetup-btn-group a:hover{
@@ -1111,7 +1135,7 @@ body{
 }
 
 .meetup-btn-group a:hover img{
-	left: 279px;
+	left: 364px;
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -1348,6 +1372,10 @@ textarea{
 	width: auto;
 
 	margin-top: 40px;
+}
+
+.footer-logo-link{
+	display: inline-block;
 }
 
 .footer-menu-wrapper{
@@ -1724,12 +1752,11 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .concept-btn-group img{
-	top: 5px;
-	left: 151px;
+	left: 72%;
 }
 
 .concept-btn-group a:hover img{
-	left: 158px;
+	left: 74%;
 }
 
 .concept-btn{
@@ -1737,7 +1764,7 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .concept-shortbtn{
-	display: inline;
+	display: block;
 }
 
 /*商品*/
@@ -1778,7 +1805,7 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .limited-product p{
-	text-align: left;
+	width: 100%;
 }
 
 .limited-product-date{
@@ -1815,7 +1842,6 @@ Tablet；画面の横幅 561-960px (960pxまで)
 
 .other-product p{
 	width: 100%;
-	text-align: left;
 	margin: 0;
 }
 
@@ -1829,12 +1855,11 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .product-btn-group img{
-	top: 5px;
-	left: 151px;
+	left: 72%;
 }
 
 .product-btn-group a:hover img{
-	left: 158px;
+	left: 74%;
 }
 
 .product-btn{
@@ -1842,7 +1867,7 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .product-shortbtn{
-	display: inline;
+	display: block;
 
 	margin-top: 20px;
 }
@@ -1866,12 +1891,11 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .meetup-btn-group img{
-	top: 5px;
-	left: 150px;
+	left: 72%;
 }
 
 .meetup-btn-group a:hover img{
-	left: 157px;
+	left: 74%;
 }
 
 .meetup-btn{
@@ -1879,7 +1903,7 @@ Tablet；画面の横幅 561-960px (960pxまで)
 }
 
 .meetup-shortbtn{
-	display: inline;
+	display: block;
 
 	margin-top: 25px;
 }
@@ -2233,6 +2257,14 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 	margin-top: 20px;
 }
 
+.concept-btn-group img{
+	left: 81%;
+}
+
+.concept-btn-group a:hover img{
+	left: 83%;
+}
+
 /*商品*/
 
 /*定番商品*/
@@ -2253,6 +2285,14 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 	margin-top: 10px;
 }
 
+.product-btn-group img{
+	left: 81%;
+}
+
+.product-btn-group a:hover img{
+	left: 83%;
+}
+
 /*パン教室*/
 .meetup-img-flame{
 	display: none;
@@ -2261,6 +2301,14 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 .meetup-btn-group{
 	width: 100%;
 	margin-top: 35px;
+}
+
+.meetup-btn-group img{
+	left: 81%;
+}
+
+.meetup-btn-group a:hover img{
+	left: 83%;
 }
 
 /*店舗情報*/
@@ -2340,5 +2388,3 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 
 
 }
-
-
