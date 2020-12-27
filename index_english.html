@@ -84,7 +84,7 @@
 							</a>
 						</li>
 						<li class="li-border">
-							<a href="#product" class="drawer-menu-item">
+							<a href="#products" class="drawer-menu-item">
 								<span class="drawer-es">Productos</span>
 								<span class="drawer-en">Products</span>
 							</a>
@@ -131,7 +131,7 @@
 			<div class="fixed-header-background">
 				<div class="flex-container fixed-header-container">
 					
-					<img src="images/fixed-logo@2x.png" alt="Pan de Leonardo" class="fixed-header-logo">
+					<a href="#" class="fixed-header-logo-link"><img src="images/fixed-logo@2x.png" alt="Pan de Leonardo" class="fixed-header-logo"></a>
 
 					<nav class="fixed-gnav">
 						<ul class="fixed-gnav-list">
@@ -146,7 +146,7 @@
 								</a>
 							</li>
 							<li class="fixed-gnav-list-item">
-								<a href="#product">
+								<a href="#products">
 									Products
 								</a>
 							</li>
@@ -182,7 +182,7 @@
 				<div class="flex-container header-container">
 					
 					<h1>
-						<img src="images/header-logo@2x.png" alt="Pan de Leonardo" class="header-logo">
+						<a href="#" class="header-logo-link"><img src="images/header-logo@2x.png" alt="Pan de Leonardo" class="header-logo"></a>
 					</h1>
 
 					<nav class="gnav">
@@ -205,7 +205,7 @@
 							</li>
 							<li class="gnav-list-item">
 								<div class="gnav-list-wrapper">
-									<a href="#product">
+									<a href="#products">
 										<span class="es">Productos</span>
 										<span class="en">Products</span>
 									</a>
@@ -349,7 +349,7 @@
 
 			<!-- ここからが商品 -->
 			<div class="background">
-				<div id="product" class="container">
+				<div id="products" class="container">
 					
 					<h2 class="title">Productos</h2>
 					<h3 class="subtitle">Products</h3>
@@ -627,7 +627,7 @@
 				<div class="flex-container footer-container">
 					
 					<div class="footer-logo">
-						<img src="images/footer-logo@2x.png" alt="Pan de Leonardo">
+						<a href="#" class="footer-logo-link"><img src="images/footer-logo@2x.png" alt="Pan de Leonardo"></a>
 					</div>
 	
 					<div class="footer-menu-group">
@@ -642,7 +642,7 @@
 										<a href="#concept">Concept</a>
 									</li>
 									<li class="footer-list">
-										<a href="#product">Products</a>
+										<a href="#products">Products</a>
 									</li>
 									<li class="footer-list">
 										<a href="#meetup">Meetup</a>
@@ -793,12 +793,12 @@
 		            if (window.matchMedia( "(max-width: 560px)" ).matches) {
 		            	$(topBtn).css({
 			                "position": "absolute", //pisitionをabsoluteに変更
-			                "bottom": "230px"
+			                "bottom": "footHeight + 10"
 		            	});
 		            } else {
 						$(topBtn).css({
 			                "position": "absolute", //固定表示
-			                "bottom": "250px"
+			                "bottom": "footHeight + 10"
 			            });
 					}
 		        } else { //それ以外の場合は
