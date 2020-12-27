@@ -134,7 +134,7 @@
 			<div class="fixed-header-background">
 				<div class="flex-container fixed-header-container">
 					
-					<img src="images/fixed-logo@2x.png" alt="Pan de Leonardo -パン・デ・レオナルド-" class="fixed-header-logo">
+					<a href="#" class="fixed-header-logo-link"><img src="images/fixed-logo@2x.png" alt="Pan de Leonardo -パン・デ・レオナルド-" class="fixed-header-logo"></a>
 
 					<nav class="fixed-gnav">
 						<ul class="fixed-gnav-list">
@@ -185,7 +185,7 @@
 				<div class="flex-container header-container">
 					
 					<h1>
-						<img src="images/header-logo@2x.png" alt="Pan de Leonardo -パン・デ・レオナルド-" class="header-logo">
+						<a href="#" class="header-logo-link"><img src="images/header-logo@2x.png" alt="Pan de Leonardo -パン・デ・レオナルド-" class="header-logo"></a>
 					</h1>
 
 					<nav class="gnav">
@@ -654,7 +654,7 @@
 				<div class="flex-container footer-container">
 					
 					<div class="footer-logo">
-						<img src="images/footer-logo@2x.png" alt="Pan de Leonardo">
+						<a href="#" class="footer-logo-link"><img src="images/footer-logo@2x.png" alt="Pan de Leonardo"></a>
 					</div>
 	
 					<div class="footer-menu-group">
@@ -819,12 +819,12 @@
 		        if (scrollHeight - scrollPosition <= footHeight) { //ドキュメントの高さと現在地の差がfooterの高さ以下の時
 		            if (window.matchMedia( "(max-width: 560px)" ).matches) {
 		            	$(topBtn).css({
-			                "position": "absolute", //pisitionをabsoluteに変更
-			                "bottom": "230px"
+			                "position": "fixed", //pisitionをabsoluteに変更
+			                "bottom": "280px"
 		            	});
 		            } else {
 						$(topBtn).css({
-			                "position": "absolute", //固定表示
+			                "position": "fixed", //固定表示
 			                "bottom": "250px"
 			            });
 					}
