@@ -16,6 +16,8 @@ body{
 	font-family: 'Noto Sans JP', sans-serif;
 	background-color: #FFFCF6;
 	line-height: 160%;
+
+	position: relative;
 }
 
 /*背景色*/
@@ -2458,4 +2460,3 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 
 
 }
-
