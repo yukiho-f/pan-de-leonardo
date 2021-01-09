@@ -1271,6 +1271,8 @@ input{
 	font-size: 18px;
 	letter-spacing: 0.02em;
 	margin: 0 0 3px 3px;
+	
+	box-sizing: border-box;
 }
 
 textarea{
@@ -1285,6 +1287,8 @@ textarea{
 	font-size: 18px;
 	letter-spacing: 0.02em;
 	margin-left: 3px;
+	
+	box-sizing: border-box;
 }
 
 .submit-btn{
@@ -2341,7 +2345,7 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 
 /*フッター*/
 .footer{
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .footer-container{
