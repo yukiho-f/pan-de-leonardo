@@ -1323,6 +1323,8 @@ input{
 	font-size: 18px;
 	letter-spacing: 0.02em;
 	margin: 0 0 3px 3px;
+	
+	box-sizing: border-box;
 }
 
 textarea{
@@ -1337,6 +1339,8 @@ textarea{
 	font-size: 18px;
 	letter-spacing: 0.02em;
 	margin-left: 3px;
+	
+	box-sizing: border-box;
 }
 
 .submit-btn{
