@@ -2386,7 +2386,7 @@ Smartphone；画面の横幅 320-560px (560pxまで)
 
 /*フッター*/
 .footer{
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .footer-container{
